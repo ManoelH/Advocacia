@@ -1,0 +1,11 @@
+
+
+#capa-livro {
+    float:left;
+    margin-right: 10px;
+}
+
+
+#resumo-livro {
+    text-align: justify;
+}
