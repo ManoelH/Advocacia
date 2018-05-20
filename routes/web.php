@@ -20,14 +20,17 @@ Route::get("/", "TelaInicialMB@telaInicial")->name('telaInicial');
 Route::post("/", "TelaPrincipalMB@sair")->name('redireciona');
 
 //tela principal
-Route::post("/principal", "TelaPrincipalMB@logar")->name('logar');
+Route::group(['prefix' => 'login', 'middleware'=>['login']], function() {
+    Route::post("/principal", "TelaPrincipalMB@logar")->name('logar');
+});
 
-//tela do usuario
-Route::get("/cadastrarUsuario", "CadastrarUsuariosMB@cadastrarUsuario")->name('cadUsuario');
 
-//telas do cliente
-Route::get("/cadastrarClienteFisico", "CadastrarClienteFisicoMB@cadastrarClienteF")->name('cadClienteFisico');
-Route::get("/cadastrarClienteJuridico", "CadastrarClienteJuridicoMB@cadastrarClienteJ")->name('cadClienteJuridico');
-Route::post("/cadastro", "CadastrarClienteJuridicoMB@CadastroJ")->name('cad');    
+//rotas de cadastro
+Route::group(['prefix' => 'cadastro', 'middleware'=>['login']], function() {
+    Route::get("/cadastrarClienteFisico", "CadastrarClienteFisicoMB@cadastrarClienteF")->name('cadClienteFisico');
+    Route::get("/cadastrarClienteJuridico", "CadastrarClienteJuridicoMB@cadastrarClienteJ")->name('cadClienteJuridico');
+    Route::post("/cadastro", "CadastrarClienteJuridicoMB@CadastroJ")->name('cad');    
+    Route::get("/cadastrarUsuario", "CadastrarUsuariosMB@cadastrarUsuario")->name('cadUsuario');
+});
 
 

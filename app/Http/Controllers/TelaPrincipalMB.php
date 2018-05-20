@@ -14,6 +14,7 @@ class TelaPrincipalMB extends Controller
     public function logar(Request $request){
 
         if($request->Usuario =='Manoel' && $request->Senha == '1234'){
+            session(['usuario'=>'Manoel']);
             return view ('pageMain');
         }
         else
@@ -21,7 +22,8 @@ class TelaPrincipalMB extends Controller
             
     }
 
-    public function sair(){
+    public function sair(Request $request){
+        $request->session()->flush();
         return redirect()->action('TelaInicialMB@telaInicial');
     }
 
