@@ -1,24 +1,24 @@
 @extends('templates.menuPrincipal')
 @section('principal')
 
-		<title>Cadastrar cliente juridico</title>
+		<title>Cadastrar processo</title>
 		<img id="fundo" src="../../../imgs/fundoPrincipal.jpg"/>
-				<h1 style="text-align: center;">Cadastrar cliente jurídico</h1><br/><br/><br/>
+				<h1 style="text-align: center;">Cadastrar processo</h1><br/><br/><br/>
 
               <form class="needs-validation" enctype="multipart/form-data" method="post" action="{{route('cad')}}" novalidate>
 							{{csrf_field()}}
                     <div class="form-row">
                       <div class="col-md-2 mb-3">
-                        <label for="validation-nome-fatasia">Nome fantasia</label>
-                        <input type="text" name="nomeFantasia" class="form-control" id="validation-nome-fatasia" placeholder="Digite o nome fantasia" required>
+                        <label for="validation-numero">Número</label>
+                        <input type="text" class="form-control" name="numero" id="validation-numero" placeholder="Digite o numero" required>
                         <div class="invalid-feedback">
-                          Por favor digite o nome fantasia
+                          Por favor digite o numero
                         </div>
                       </div>
 
                       <div class="col-md-1,5 mb-3">
-                        <label for="validation-cep">CEP</label>
-                        <input type="text" name="cep" class="form-control" id="validation-cep" placeholder="Digite o CEP" required>
+                        <label for="validation-cep">Assunto</label>
+                        <input type="text" name="cep" class="form-control" name="cep" id="validation-cep" placeholder="Digite o CEP" required>
                         <div class="invalid-feedback">
 												Por favor digite o cep
                         </div>
@@ -98,14 +98,6 @@
                           <div class="invalid-feedback">
                             Por favor digite o número
                           </div>
-												</div>
-
-													<div class="col-md-2 mb-3">
-													<label>Imagem</label>
-													<img src="../../../imgs/uploads/cliente fisico.jpg" alt="titulo" class="img-thumbnail" style="width:200px; height:150px;">
-													</div>
-											</div>
-											<input type="file" class="form-control-file" name="foto" id="exampleFormControlFile1" style="width: 350px;">
 													
                     </div>
 										

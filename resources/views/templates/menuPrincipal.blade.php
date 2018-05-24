@@ -63,7 +63,7 @@
 						Processos
 					  </a>
 					  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Cadastrar processo</a>
+						<a class="dropdown-item" href="{{ URL::route('cadProcesso') }}">Cadastrar processo</a>
 						<a class="dropdown-item" href="#">Editar processo</a>
 						<a class="dropdown-item" href="#">Listar processos</a>
 						<a class="dropdown-item" href="#">Arquivar processo</a>
