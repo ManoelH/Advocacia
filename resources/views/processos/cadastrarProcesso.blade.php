@@ -85,25 +85,76 @@
 													</div>
 
 	                    <div class="col-md-2 mb-3">
-                        <label for="validation-rua">Rua</label>
-                        <input type="text" name="rua" class="form-control" name="rua" id="validation-rua" placeholder="Digite a rua" required>
-                        <div class="invalid-feedback">
-                          Por favor digite a rua
-                        </div>
-                      </div>
+													<label>Cliente</label>
+													<div class="form-group">
+														<select class="custom-select" name="cliente" required>
+															<option value=""></option>
+															<option value="1">Cliente 1</option>
+															<option value="2">Cliente 2</option>
+															<option value="3">Cliente 3</option>
+														</select>
+													</div>
+													</div>
+
+                      <div class="col-md-2 mb-3">
+													<label>Réu</label>
+													<div class="form-group">
+														<select class="custom-select" name="reu" required>
+															<option value=""></option>
+															<option value="1">Réu 1</option>
+															<option value="2">Réu 2</option>
+															<option value="3">Réu 3</option>
+														</select>
+													</div>
+													</div>    
+
+                        <div class="col-md-2 mb-3">
+													<label>Advogado</label>
+													<div class="form-group">
+														<select class="custom-select" name="advogado" required>
+															<option value=""></option>
+															<option value="1">Advogado 1</option>
+															<option value="2">Advogado 2</option>
+															<option value="3">Advogado 3</option>
+														</select>
+													</div>
+													</div>
+
+                      <div class="col-md-2 mb-3">
+													<label>Juíz</label>
+													<div class="form-group">
+														<select class="custom-select" name="juiz" required>
+															<option value=""></option>
+															<option value="1">Juíz 1</option>
+															<option value="2">Juíz 2</option>
+															<option value="3">Juíz 3</option>
+														</select>
+													</div>
+													</div>
+
+                        <div class="col-md-2 mb-3">
+													<label>Testemunhas</label>
+													<div class="form-group">
+														<select class="custom-select" name="testemunha" required>
+															<option value=""></option>
+															<option value="1">Testemunha 1</option>
+															<option value="2">Testemunha 2</option>
+															<option value="3">Testemunha 3</option>
+														</select>
+													</div>
+													</div>
 
 											<div class="col-md-1,5 mb-3">
-                        <label for="validation-n">Nº</label>
-                          <input type="text" name="numero" class="form-control" name="n" id="validation-n" aria-describedby="inputGroupPrepend" placeholder="Digite a número" required>
+                        <label for="validation-n">Data de inicio do processo</label>
+                          <input type="text" name="data-inicio" class="form-control" name="n" id="validation-n" aria-describedby="inputGroupPrepend" placeholder="Digite a data" required>
                           <div class="invalid-feedback">
-                            Por favor digite o número
-                          </div>
-													
-                    </div>
+                            Por favor digite a data do inicio
+                          </div>			
+                      </div>
 										
                       
 										</div>
-										
+										<input type="file" class="form-control-file" id="exampleFormControlFile1" namespace="arquivo" style="width: 350px;">
 
 
                     <div class="form-group">
