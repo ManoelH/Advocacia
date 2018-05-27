@@ -3,9 +3,10 @@
  	
 <img id="fundo" src="../../../imgs/fundoPrincipal.jpg"/>
 
-<h1 style="text-align: center;">Cadastrar cliente fisico</h1><br/><br/><br/>
+	
 
-
+						<div style="padding: 3%;">
+						<h1 style="text-align: center; margin-top: 2%;">Cadastrar cliente fisico</h1><br/><br/><br/>
               <form class="needs-validation" novalidate>
                     <div class="form-row">
                       <div class="col-md-2 mb-3">
@@ -234,7 +235,7 @@
                     </div>
                     <button class="btn btn-primary" type="submit">Cadastrar</button>
                   </form>
-                  
+                </div>  
                   <script>
                   // Example starter JavaScript for disabling form submissions if there are invalid fields
                   (function() {

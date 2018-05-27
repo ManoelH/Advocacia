@@ -2,8 +2,8 @@
 @section('principal')
  	
 				<img id="fundo" src="../../../imgs/fundoPrincipal.jpg"/>
-				<h1 style="text-align: center;">Cadastrar usuário</h1><br/><br/><br/>
-
+        <div style="padding: 3%;">
+				<h1 style="text-align: center; margin-top: 2%;">Cadastrar usuário</h1><br/><br/><br/>
 				<form class="needs-validation" novalidate>
                     <div class="form-row" style="position: absolute !important; right: 45% !important;">
                       <div>
@@ -21,7 +21,7 @@
 
 												<label>Tipo de usuário</label>
 													<div class="form-group">
-														<select class="custom-select" style="align: bottom; width: 155px;" required>
+														<select class="custom-select" required>
 															<option value=""></option>
 															<option value="1">Advogado</option>
 															<option value="2">Usuário comum</option>
@@ -41,7 +41,7 @@
                     </div>
                     
                   </form>
-
+                </div>
 									                  <script>
                   // Example starter JavaScript for disabling form submissions if there are invalid fields
                   (function() {

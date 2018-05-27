@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class TabelaProcessos extends Migration
+class CreateProcessosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,21 +15,20 @@ class TabelaProcessos extends Migration
     {
         Schema::create('processos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('titulo');
             $table->string('numero');
             $table->string('assunto');
-            $table->string('area_atuacao');
-            $table->string('telefone');
-            $table->string('cnpj');
-            $table->string('razao_social');
-            $table->string('cidade');
-            $table->int('id_cliente');
-            $table->int('id_reu');
-            $table->int('id_advogado');
-            $table->int('id_juiz');
-            $table->int('id_testemunha1');
-            $table->int('id_testemunha2');
-            $table->int('id_testemunha3');
-            $table->date('data_inicio');                        
+            $table->float('valorCausa');
+            $table->string('faseProcessual');
+            $table->string('id_cliente');
+            $table->string('id_reu');
+            $table->string('id_advogado');
+            $table->string('id_juiz');
+            $table->string('id_testemunha1');
+            $table->string('id_testemunha2');
+            $table->string('id_testemunha3');
+            $table->date('dataInicio'); 
+            $table->boolean('concluido')->default(false);                       
             $table->timestamps();
         });
     }

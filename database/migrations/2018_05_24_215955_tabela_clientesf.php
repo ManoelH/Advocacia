@@ -26,13 +26,13 @@ class TabelaClientesf extends Migration
             $table->string('cidade');
             $table->string('rua');
             $table->string('numero');
-            $table->string('data_nascimento');
+            $table->string('dataNascimento');
             $table->string('rg');
             $table->string('estado_civil');
             $table->string('conjugue');                        
             $table->string('certidao_casamento');
             $table->string('uf');
-            $table->string('uf_ctps');
+            $table->string('ufCtps');
         });
     }
 

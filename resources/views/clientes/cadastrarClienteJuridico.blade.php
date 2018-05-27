@@ -3,8 +3,8 @@
 
 		<title>Cadastrar cliente juridico</title>
 		<img id="fundo" src="../../../imgs/fundoPrincipal.jpg"/>
-				<h1 style="text-align: center;">Cadastrar cliente jurídico</h1><br/><br/><br/>
-
+    	<div style="padding: 3%;">
+				<h1 style="text-align: center; margin-top: 2%;">Cadastrar cliente jurídico</h1><br/><br/><br/>
               <form class="needs-validation" enctype="multipart/form-data" method="post" action="{{route('cad')}}" novalidate>
 							{{csrf_field()}}
                     <div class="form-row">
@@ -123,6 +123,7 @@
                     </div>
                     <button class="btn btn-primary" type="submit">Cadastrar</button>
                   </form>
+                </div>
 
 									                  <script>
                   // Example starter JavaScript for disabling form submissions if there are invalid fields

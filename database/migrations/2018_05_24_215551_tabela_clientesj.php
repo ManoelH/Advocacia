@@ -15,12 +15,12 @@ class TabelaClientesj extends Migration
     {
         Schema::create('clientes_juridicos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nome_fantasia');
+            $table->string('nomeFantasia');
             $table->string('cep');
-            $table->string('area_atuacao');
+            $table->string('areaAtuacao');
             $table->string('telefone');
             $table->string('cnpj');
-            $table->string('razao_social');
+            $table->string('razaoSocial');
             $table->string('cidade');
             $table->string('rua');
             $table->string('numero');
