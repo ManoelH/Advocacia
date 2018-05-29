@@ -9,25 +9,19 @@
 							{{csrf_field()}}
                     <div class="form-row">
                       <div class="col-md-2 mb-3">
-                        <label for="validation-nome-fatasia">Nome fantasia</label>
-                        <input type="text" name="nomeFantasia" class="form-control" id="validation-nome-fatasia" placeholder="Digite o nome fantasia" required>
-                        <div class="invalid-feedback">
-                          Por favor digite o nome fantasia
-                        </div>
+                        <label>Nome fantasia</label>
+                        <input type="text" name="nomeFantasia" class="form-control" placeholder="Digite o nome fantasia"  >
                       </div>
 
                       <div class="col-md-1,5 mb-3">
-                        <label for="validation-cep">CEP</label>
-                        <input type="text" name="cep" class="form-control" id="validation-cep" placeholder="Digite o CEP" required>
-                        <div class="invalid-feedback">
-												Por favor digite o cep
-                        </div>
+                        <label>CEP</label>
+                        <input type="text" name="cep" class="form-control" placeholder="Digite o CEP"  >
                       </div>
 
 	 										<div class="col-md-2 mb-3">
 													<label>Área de atuação</label>
 													<div class="form-group">
-														<select name="areaAtuacao" class="custom-select" name="areaAtuacao" style="align: bottom;" required>
+														<select name="areaAtuacao" class="custom-select" name="areaAtuacao" style="align: bottom;"  >
 															<option value=""></option>
 															<option value="1">Administração</option>
 															<option value="2">Agrícola</option>
@@ -53,51 +47,34 @@
 													</div>
 
 											<div class="col-md-2 mb-3">
-                        <label for="validation-telefone">Telefone</label>
-                        <input type="text" name="telefone" class="form-control" name="telefone" id="validation-telefone" placeholder="Digite o telefone" required>
-                        <div class="invalid-feedback">
-												Por favor digite o telefone
-                        </div>
+                        <label>Telefone</label>
+                        <input type="text" name="telefone" class="form-control" name="telefone" placeholder="Digite o telefone"  >
                       </div>
 
 											<div class="col-md-2 mb-3">
-                        <label for="validation-cnpj">CNPJ</label>
-                          <input type="text" name="cnpj" class="form-control" name="cnpj" id="validation-cnpj" placeholder="digite o CNPJ" aria-describedby="inputGroupPrepend" required>
-                          <div class="invalid-feedback">
-                            Por favor digite o CNPJ
-                          </div>
+                        <label>CNPJ</label>
+                          <input type="text" name="cnpj" class="form-control" name="cnpj"  placeholder="digite o CNPJ" aria-describedby="inputGroupPrepend">
 												</div>
 												
 												<div class="col-md-2 mb-3">
-													<label for="validation-razao">Razão social</label>
-														<input type="text" name="razaoSocial" class="form-control" name="razaoSocial" id="validation-razao" placeholder="digite a razão social" aria-describedby="inputGroupPrepend" required>
-														<div class="invalid-feedback">
-															Por favor digite a razão social
-														</div>
+													<label>Razão social</label>
+														<input type="text" name="razaoSocial" class="form-control" name="razaoSocial" id="validation-razao" aria-describedby="inputGroupPrepend">
 													</div>
 
 													<div class="col-md-2 mb-3">
-														<label for="validation-cidade">Cidade</label>
-														<input type="text" name="cidade" class="form-control" name="cidade" id="validation-cidade" placeholder="Digite a cidade" required>
-														<div class="invalid-feedback">
-															Por favor preencha o campo cidade
-														</div>
+														<label>Cidade</label>
+														<input type="text" name="cidade" class="form-control" name="cidade" placeholder="Digite a cidade"  >
 													</div>
 
 	                    <div class="col-md-2 mb-3">
-                        <label for="validation-rua">Rua</label>
-                        <input type="text" name="rua" class="form-control" name="rua" id="validation-rua" placeholder="Digite a rua" required>
-                        <div class="invalid-feedback">
-                          Por favor digite a rua
-                        </div>
+                        <label>Rua</label>
+                        <input type="text" name="rua" class="form-control" name="rua" placeholder="Digite a rua"  >
+                        
                       </div>
 
 											<div class="col-md-1,5 mb-3">
-                        <label for="validation-n">Nº</label>
-                          <input type="text" name="numero" class="form-control" name="n" id="validation-n" aria-describedby="inputGroupPrepend" placeholder="Digite a número" required>
-                          <div class="invalid-feedback">
-                            Por favor digite o número
-                          </div>
+                        <label>Nº</label>
+                          <input type="text" name="numero" class="form-control" name="n" aria-describedby="inputGroupPrepend" placeholder="Digite a número"  >
 												</div>
 
 													<div class="col-md-2 mb-3">

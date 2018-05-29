@@ -38,6 +38,13 @@ class CadastrarProcessoMB extends Controller
             'valorCausa' => $request->valorCausa,
             'faseProcessual' => $request->faseProcessual,
             'dataInicio' => $request->dataInicio,
+            'cliente' => $request->cliente,
+            'reu' => $request->reu,
+            'advogado' => $request->advogado,
+            'juiz' =>$request->juiz,
+            'testemunha1' =>$request->testemunha1,
+            'testemunha2' =>$request->testemunha2,
+            'testemunha3' =>$request->testemunha3,
             ]);
          
         // return view('processos.cadastrarProcesso');

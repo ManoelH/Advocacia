@@ -10,40 +10,28 @@
               <form class="needs-validation" novalidate>
                     <div class="form-row">
                       <div class="col-md-2 mb-3">
-                        <label for="validation-nome">Cliente</label>
-                        <input type="text" name="cliente" class="form-control" id="validation-nome" placeholder="Digite o nome do cliente" required>
-                        <div class="invalid-feedback">
-                          Por favor digite o nome
-                        </div>
+                        <label>Cliente</label>
+                        <input type="text" name="cliente" class="form-control" placeholder="Digite o nome do cliente">
                       </div>
 
                       <div class="col-md-1,5 mb-3">
-                        <label for="validation-cep">CEP</label>
-                        <input type="text" name="cep" class="form-control" id="validation-cep" placeholder="Digite o CEP" required>
-                        <div class="invalid-feedback">
-												Por favor digite o cep
-                        </div>
+                        <label>CEP</label>
+                        <input type="text" name="cep" class="form-control" placeholder="Digite o CEP">
                       </div>
 
 											<div class="col-md-2 mb-3">
-                        <label for="validation-telefone">Telefone</label>
-                        <input type="text" name="telefone" class="form-control" id="validation-telefone" placeholder="Digite o telefone" required>
-                        <div class="invalid-feedback">
-												Por favor digite o telefone
-                        </div>
+                        <label>Telefone</label>
+                        <input type="text" name="telefone" class="form-control" placeholder="Digite o telefone">
                       </div>
 
 											<div class="col-md-2 mb-3">
-                        <label for="validation-cpf">Cpf</label>
-                          <input type="text" name="cpf" class="form-control" id="validation-cpf" placeholder="digite o CPF" aria-describedby="inputGroupPrepend" required>
-                          <div class="invalid-feedback">
-                            Por favor digite o CPF
-                          </div>
+                        <label>Cpf</label>
+                          <input type="text" name="cpf" class="form-control" placeholder="digite o CPF" aria-describedby="inputGroupPrepend">
 												</div>
 												
 												<div class="col-md-1,5 mb-3">
-													<label for="validation-CTPS">CTPS</label>
-														<input type="text" name="ctps" class="form-control" id="validation-CTPS" placeholder="digite a CTPS" aria-describedby="inputGroupPrepend" required>
+													<label>CTPS</label>
+														<input type="text" name="ctps" class="form-control" id="validation-CTPS" placeholder="digite a CTPS" aria-describedby="inputGroupPrepend"  >
 														<div class="invalid-feedback">
 															Por favor digite a CTPS
 														</div>
@@ -51,7 +39,7 @@
 
 													<div class="col-md-2 mb-3">
                         <label for="validation-PISPASEP">PIS/PASEP</label>
-                          <input type="text" name="pisPasep" class="form-control" id="validation-PISPASEP" placeholder="digite o PIS/PASEP" aria-describedby="inputGroupPrepend" required>
+                          <input type="text" name="pisPasep" class="form-control" id="validation-PISPASEP" placeholder="digite o PIS/PASEP" aria-describedby="inputGroupPrepend"  >
                           <div class="invalid-feedback">
                             Por favor digite o PIS/PASEP
                           </div>
@@ -59,7 +47,7 @@
 
 												<div class="col-md-1 mb-3">
                         <label for="validation-s-CTPS">Série</label>
-                          <input type="text" name="serie" class="form-control" id="validation-s-CTPS" aria-describedby="inputGroupPrepend" placeholder="Digite a série" required>
+                          <input type="text" name="serie" class="form-control" id="validation-s-CTPS" aria-describedby="inputGroupPrepend" placeholder="Digite a série"  >
                           <div class="invalid-feedback">
                             Por favor digite a Série da CTPS
                           </div>
@@ -67,7 +55,7 @@
 
 													<div class="col-md-2 mb-3">
 														<label for="validation-cidade">Cidade</label>
-														<input type="text" name="cidade" class="form-control" id="validation-cidade" placeholder="Digite a cidade" required>
+														<input type="text" name="cidade" class="form-control" id="validation-cidade" placeholder="Digite a cidade"  >
 														<div class="invalid-feedback">
 															Por favor preencha o campo cidade
 														</div>
@@ -75,7 +63,7 @@
 
 	                    <div class="col-md-2 mb-3">
                         <label for="validation-rua">Rua</label>
-                        <input type="text" name="rua" class="form-control" id="validation-rua" placeholder="Digite a rua" required>
+                        <input type="text" name="rua" class="form-control" id="validation-rua" placeholder="Digite a rua"  >
                         <div class="invalid-feedback">
                           Por favor digite a rua
                         </div>
@@ -83,7 +71,7 @@
 
 											<div class="col-md-1 mb-3">
                         <label for="validation-n">Nº</label>
-                          <input type="text" name="numero" class="form-control" id="validation-n" aria-describedby="inputGroupPrepend" placeholder="Digite a número" required>
+                          <input type="text" name="numero" class="form-control" id="validation-n" aria-describedby="inputGroupPrepend" placeholder="Digite a número"  >
                           <div class="invalid-feedback">
                             Por favor digite o número
                           </div>
@@ -91,15 +79,15 @@
 
 													<div class="col-md-3 mb-3">
 														<label for="validation-dt-nascimento">Data de nascimento</label>
-														<input type="text" name="dataNascimento" class="form-control" id="validation-dt-nascimento" placeholder="Digite a data de nascimento" required>
+														<input type="text" name="dataNascimento" class="form-control" id="validation-dt-nascimento" placeholder="Digite a data de nascimento"  >
 														<div class="invalid-feedback">
 															Por favor digite a data de nascimento
 														</div>
 													</div>
 
 													<div class="col-md-3 mb-3">
-														<label for="validation-rg">RG</label>
-														<input type="text" name="rg" class="form-control" id="validation-rg" placeholder="Digite o RG" required>
+														<label>RG</label>
+														<input type="text" name="rg" class="form-control" placeholder="Digite o RG"  >
 														<div class="invalid-feedback">
 														Por favor digite o RG
 														</div>
@@ -108,7 +96,7 @@
 													<div class="col-md-2 mb-3">
 													<label>Estado civil</label>
 													<div class="form-group">
-														<select class="custom-select" name="estadoCivil" required>
+														<select class="custom-select" name="estadoCivil"  >
 															<option value=""></option>
 															<option value="1">Solteiro</option>
 															<option value="2">Casado</option>
@@ -119,16 +107,13 @@
 
 
                       <div class="col-md-2 mb-3">
-                        <label for="validation-conjugue">Conjugue</label>
-                        <input type="text" name="conjugue" class="form-control" id="validation-conjugue" placeholder="Digite o nome do cliente" required>
-                        <div class="invalid-feedback">
-                          Por favor digite o nome do conjugue
-                        </div>
+                        <label>Conjugue</label>
+                        <input type="text" name="conjugue" class="form-control" placeholder="Digite o nome do cliente">
                       </div>
 
 											<div class="col-md-3 mb-3">
-														<label for="validation-casamento">Certidão de casamento</label>
-														<input type="text" name="certidaoNascimento" class="form-control" id="validation-casamento" placeholder="Digite a certidão de casamento" required>
+														<label>Certidão de casamento</label>
+														<input type="text" name="certidaoNascimento" class="form-control" id="validation-casamento" placeholder="Digite a certidão de casamento"  >
 														<div class="invalid-feedback">
 															Por favor digite a certidão de casamento
 														</div>
@@ -137,7 +122,7 @@
 											<div class="col-md-1 mb-3">
 													<label>UF</label>
 													<div class="form-group">
-														<select name="uf" class="custom-select" style="align: bottom;" required>
+														<select name="uf" class="custom-select" style="align: bottom;"  >
 															<option value=""></option>
 															<option value="1">AC</option>
 															<option value="2">AL</option>
@@ -173,7 +158,7 @@
 													<div class="col-md-1 mb-3">
 													<label>UF da CTPS</label>
 													<div class="form-group">
-														<select name="ufCtps" class="custom-select" required>
+														<select name="ufCtps" class="custom-select"  >
 															<option value=""></option>
 															<option value="1">AC</option>
 															<option value="2">AL</option>

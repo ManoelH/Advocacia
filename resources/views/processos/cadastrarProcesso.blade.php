@@ -94,9 +94,9 @@
 													</div>
 
                         <div class="col-md-2 mb-3">
-													<label>Testemunhas</label>
+													<label>1ª Testemunha</label>
 													<div class="form-group">
-														<select class="custom-select" name="testemunha" >
+														<select class="custom-select" name="testemunha1" >
 															<option value=""></option>
 															<option value="1">Testemunha 1</option>
 															<option value="2">Testemunha 2</option>
@@ -105,6 +105,30 @@
 													</div>
 													</div>
 
+                        <div class="col-md-2 mb-3">
+													<label>2ª Testemunha</label>
+													<div class="form-group">
+														<select class="custom-select" name="testemunha2" >
+															<option value=""></option>
+															<option value="1">Testemunha 1</option>
+															<option value="2">Testemunha 2</option>
+															<option value="3">Testemunha 3</option>
+														</select>
+													</div>
+													</div>
+
+													
+                        <div class="col-md-2 mb-3">
+													<label>3ª Testemunha</label>
+													<div class="form-group">
+														<select class="custom-select" name="testemunha3" >
+															<option value=""></option>
+															<option value="1">Testemunha 1</option>
+															<option value="2">Testemunha 2</option>
+															<option value="3">Testemunha 3</option>
+														</select>
+													</div>
+													</div>
 											<div class="col-md-1,5 mb-3">
                         <label >Data de inicio do processo</label>
                           <input type="date" name="dataInicio" class="form-control"  aria-describedby="inputGroupPrepend" placeholder="Digite a data" >		
