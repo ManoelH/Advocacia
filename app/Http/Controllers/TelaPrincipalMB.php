@@ -27,4 +27,7 @@ class TelaPrincipalMB extends Controller
         return redirect()->action('TelaInicialMB@telaInicial');
     }
 
+    public function home(){
+        return redirect()->action('TelaPrincipalMB@logar');
+    }
 }

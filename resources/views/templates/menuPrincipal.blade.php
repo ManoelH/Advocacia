@@ -65,7 +65,7 @@
 					  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="{{ URL::route('cadProcesso') }}">Cadastrar processo</a>
 						<a class="dropdown-item" href="#">Editar processo</a>
-						<a class="dropdown-item" href="#">Listar processos</a>
+						<a class="dropdown-item" href="{{ URL::route('listaProcessos') }}">Listar processos</a>
 						<a class="dropdown-item" href="#">Arquivar processo</a>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="#">Excluir processo</a>
@@ -121,9 +121,7 @@
 				</div>
 			  </nav>
 
-
             @yield('principal')
-
 
 
               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

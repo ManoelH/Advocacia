@@ -6,12 +6,12 @@
 
 					<div style="padding: 3%;">
 						<h1  style="text-align: center; margin-top: 2%;">Cadastrar processo</h1><br/><br/><br/>
-              <form enctype="multipart/form-data" method="post" action="{{route('processoCadastradoCaio')}}">
+              <form enctype="multipart/form-data" method="post" action="{{route('processoCadastrado')}}">
 							{{csrf_field()}}
                     <div class="form-row">
                       <div class="col-md-2 mb-3">
                         <label>Título</label>
-                        <input type="text" class="form-control" name="titulo"placeholder="Digite o numero">
+                        <input type="text" class="form-control" name="titulo"placeholder="Digite o titulo">
                     	</div>
 
                       <div class="col-md-2 mb-3">
@@ -48,7 +48,7 @@
 	                    <div class="col-md-2 mb-3">
 													<label>Cliente</label>
 													<div class="form-group">
-														<select class="custom-select" name="cliente" >
+														<select class="custom-select" name="cliente">
 															<option value=""></option>
 															<option value="1">Cliente 1</option>
 															<option value="2">Cliente 2</option>
