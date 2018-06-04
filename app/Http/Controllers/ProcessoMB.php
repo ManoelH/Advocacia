@@ -61,7 +61,8 @@ class ProcessoMB extends Controller
 
     public function listarProcessos(){
         $processos = Processo::where('concluido',false)->orderBy('titulo')->get();
-       return view('processos.listarProcessos', compact('processos'));
+        $conta = $processos->count();
+       return view('processos.listarProcessos', compact('processos', 'conta'));
     }
 
     public function CadastrarProcesso(){
