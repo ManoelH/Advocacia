@@ -24,7 +24,7 @@ class TelaPrincipalMB extends Controller
 
     public function sair(Request $request){
         $request->session()->flush();
-        return redirect()->action('TelaInicialMB@telaInicial');
+        return redirect()->route('telaInicial'); //action('TelaInicialMB@telaInicial');
     }
 
     public function home(){
