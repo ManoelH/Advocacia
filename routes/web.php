@@ -26,8 +26,8 @@ Route::group(['prefix' => 'login'], function() {
 
 
 
-//rotas de cadastro
-Route::group(['prefix' => 'cadastro', 'middleware'=>['login']], function() {
+    //rotas logado
+Route::group(['prefix' => 'logado', 'middleware'=>['login']], function() {
     Route::get("/cadastrarClienteFisico", "CadastrarClienteFisicoMB@cadastrarClienteF")->name('cadClienteFisico');
     Route::get("/cadastrarClienteJuridico", "CadastrarClienteJuridicoMB@cadastrarClienteJ")->name('cadClienteJuridico');
     Route::post("/cadastro", "CadastrarClienteJuridicoMB@CadastroJ")->name('cad');    
@@ -36,6 +36,9 @@ Route::group(['prefix' => 'cadastro', 'middleware'=>['login']], function() {
     Route::get("/cadastrarProcesso", "ProcessoMB@CadastrarProcesso")->name('cadProcesso');
     Route::post("/processoCadastrado", "ProcessoMB@cadastro")->name('processoCadastrado');
     Route::get("/listarProcessos", "ProcessoMB@listarProcessos")->name('listaProcessos');
+    
+    Route::get("/editarProcessos/{id}", "ProcessoMB@editarProcesso")->name('editarProcesso');
+    Route::get("/excluirProcesso/{id}", "ProcessoMB@excluir")->name('excluirProcesso');
     // Route::post('/processoCadastrado', function () {
     //     echo "meu caralho";
     // })->name('processoCadastradoCaio');

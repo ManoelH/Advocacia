@@ -16,7 +16,7 @@
 
                       <div class="col-md-2 mb-3">
                         <label>Número</label>
-                        <input type="text" class="form-control" name="numero" placeholder="Digite o numero">
+                        <input type="number" class="form-control" name="numero" placeholder="Digite o numero">
                       </div>
                         <input type="hidden" name="assunto"  value="trabalhista">
 
@@ -30,17 +30,17 @@
 												<div class="form-group">
 													<select class="custom-select" name="faseProcessual" >
 														<option value=""></option>
-														<option value="1">Aguardando distribuição</option>
-														<option value="2">Andamento</option>
-														<option value="3">Conhecimento</option>
-														<option value="4">Entrevista</option>
-														<option value="5">Execução</option>
-														<option value="6">Execução definitiva</option>
-														<option value="7">Execução provisória</option>
-														<option value="8">Instrução</option>
-														<option value="9">Liquidação</option>
-														<option value="10">Liquidado</option>
-														<option value="11">Recursal</option>
+														<option value="Aguardando distribuição">Aguardando distribuição</option>
+														<option value="Andamento">Andamento</option>
+														<option value="Conhecimento">Conhecimento</option>
+														<option value="Entrevista">Entrevista</option>
+														<option value="Execução">Execução</option>
+														<option value="Execução definitiva">Execução definitiva</option>
+														<option value="Execução provisória">Execução provisória</option>
+														<option value="Instrução">Instrução</option>
+														<option value="Liquidação">Liquidação</option>
+														<option value="Liquidado">Liquidado</option>
+														<option value="Recursal">Recursal</option>
 													</select>
 												</div>
 												</div>
@@ -50,9 +50,9 @@
 													<div class="form-group">
 														<select class="custom-select" name="cliente">
 															<option value=""></option>
-															<option value="1">Cliente 1</option>
-															<option value="2">Cliente 2</option>
-															<option value="3">Cliente 3</option>
+															<option value="João">João</option>
+															<option value="Alberto">Alberto</option>
+															<option value="Gilherme">Gilherme</option>
 														</select>
 													</div>
 													</div>
@@ -62,9 +62,9 @@
 													<div class="form-group">
 														<select class="custom-select" name="reu" >
 															<option value=""></option>
-															<option value="1">Réu 1</option>
-															<option value="2">Réu 2</option>
-															<option value="3">Réu 3</option>
+															<option value="JS laticineos">JS laticineos</option>
+															<option value="AM Softwares">AM Softwares</option>
+															<option value="B.A EAD">B.A EAD</option>
 														</select>
 													</div>
 													</div>    
@@ -74,9 +74,9 @@
 													<div class="form-group">
 														<select class="custom-select" name="advogado" >
 															<option value=""></option>
-															<option value="1">Advogado 1</option>
-															<option value="2">Advogado 2</option>
-															<option value="3">Advogado 3</option>
+															<option value="Manoel">Manoel</option>
+															<option value="Henrique">Henrique</option>
+															<option value="Letícia">Letícia</option>
 														</select>
 													</div>
 													</div>
@@ -86,9 +86,9 @@
 													<div class="form-group">
 														<select class="custom-select" name="juiz" >
 															<option value=""></option>
-															<option value="1">Juíz 1</option>
-															<option value="2">Juíz 2</option>
-															<option value="3">Juíz 3</option>
+															<option value="Elizangela">Elizangela</option>
+															<option value="Gabriel">Gabriel</option>
+															<option value="Raphael">Raphael</option>
 														</select>
 													</div>
 													</div>
@@ -98,9 +98,11 @@
 													<div class="form-group">
 														<select class="custom-select" name="testemunha1" >
 															<option value=""></option>
-															<option value="1">Testemunha 1</option>
-															<option value="2">Testemunha 2</option>
-															<option value="3">Testemunha 3</option>
+															<option value="Maria">Maria</option>
+															<option value="José">José</option>
+															<option value="Antônia">Antônia</option>
+															<option value="Julia">Julia</option>
+															<option value="Ulisses">Ulisses</option>
 														</select>
 													</div>
 													</div>
@@ -110,9 +112,11 @@
 													<div class="form-group">
 														<select class="custom-select" name="testemunha2" >
 															<option value=""></option>
-															<option value="1">Testemunha 1</option>
-															<option value="2">Testemunha 2</option>
-															<option value="3">Testemunha 3</option>
+															<option value="Maria">Maria</option>
+															<option value="José">José</option>
+															<option value="Antônia">Antônia</option>
+															<option value="Julia">Julia</option>
+															<option value="Ulisses">Ulisses</option>
 														</select>
 													</div>
 													</div>
@@ -123,9 +127,11 @@
 													<div class="form-group">
 														<select class="custom-select" name="testemunha3" >
 															<option value=""></option>
-															<option value="1">Testemunha 1</option>
-															<option value="2">Testemunha 2</option>
-															<option value="3">Testemunha 3</option>
+															<option value="Maria">Maria</option>
+															<option value="José">José</option>
+															<option value="Antônia">Antônia</option>
+															<option value="Julia">Julia</option>
+															<option value="Ulisses">Ulisses</option>
 														</select>
 													</div>
 													</div>

@@ -64,8 +64,18 @@ class ProcessoMB extends Controller
        return view('processos.listarProcessos', compact('processos'));
     }
 
+    public function editarProcesso(Request $request){
+        Processo::where('id', $request->id)->update($request->all());
+        return redirect()->route('listaProcessos');
+    }
+
     public function CadastrarProcesso(){
         return view('processos.cadastrarProcesso');
+    }
+
+    public function excluir($id){
+        Processo::destroy($id);
+        return redirect()->route('listaProcessos');
     }
 
 

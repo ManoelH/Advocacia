@@ -110,9 +110,6 @@
 						<a class="dropdown-item" href="#">Excluir usuário</a>
 					  </div>
 					</li>
-					<li class="nav-item">
-					  <a class="nav-link disabled" href="#">Disabled</a>
-					</li>
 				  </ul>
 				  <form action="{{route('redireciona')}}" method="post" class="form-inline my-2 my-lg-0">
 							{{csrf_field()}}
