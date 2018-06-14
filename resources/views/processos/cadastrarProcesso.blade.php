@@ -5,7 +5,7 @@
 		<img id="fundo" src="../../../imgs/fundoPrincipal.jpg"/>
 
 					<div style="padding: 3%;">
-						<h1  style="text-align: center; margin-top: 2%;">Cadastrar processo</h1><br/><br/><br/>
+						<h1  style="text-align: center; margin-top: 2%;">Cadastrar processo: Cliente fisico</h1><br/><br/><br/>
               <form enctype="multipart/form-data" method="post" action="{{route('processoCadastrado')}}">
 							{{csrf_field()}}
                     <div class="form-row">

@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\DB;
 
 class ProcessoMB extends Controller
 {
+
+    //PROCESSOS NÃO ARQUIVADOS
     public function cadastro(Request $request){
         $this->validate($request,[
             'titulo' => 'required',
@@ -22,7 +24,6 @@ class ProcessoMB extends Controller
             'dataInicio' => 'required',
             'cliente' => 'required'
         ]);
-        echo 'PROCESSO CADASTRADO COM SUCESSO!';
         $processo = new Processo;
         $processo->titulo = $request->titulo;
         $processo->numero = $request->numero;
@@ -38,6 +39,7 @@ class ProcessoMB extends Controller
         $processo->faseProcessual = $request->faseProcessual;
         $processo->dataInicio = $request->dataInicio;
         $processo->save();
+        return redirect()->route('cadProcesso');
         // echo $request->assunto;
         // DB::table('processos')->insert([
         //     'titulo' =>  $request->titulo, 
@@ -60,13 +62,14 @@ class ProcessoMB extends Controller
     }
 
     public function listarProcessos(){
+        $processo = null;
         $processos = Processo::where('concluido',false)->orderBy('titulo')->get();
-       return view('processos.listarProcessos', compact('processos'));
+       return view('processos.listarProcessos', compact('processos', 'processo'));
     }
 
     public function editarProcesso(Request $request){
-        Processo::where('id', $request->id)->update($request->all());
-        return redirect()->route('listaProcessos');
+            $processos = Processo::where('id', $request->id)->update($request->all());
+            return redirect()->route('listaProcessos');        
     }
 
     public function CadastrarProcesso(){
@@ -78,7 +81,28 @@ class ProcessoMB extends Controller
         return redirect()->route('listaProcessos');
     }
 
+    public function arquivarProcesso(Request $request){
+        $processos = Processo::find($request->id);
+        $processos->concluido = true;
+        $processos->save(); 
+        return redirect()->route('listaProcessos');        
+}
 
+//PROCESSOS ARQUIVADOS
+    public function listaProcessosArquivado(){
+        $processo = null;
+        $processos = Processo::where('concluido',true)->orderBy('titulo')->get();
+    return view('processos.listarProcessosArquivados', compact('processos', 'processo'));
+}
+    public function reabrirProcesso(Request $request){
+        $processos = Processo::find($request->id);
+        $processos->concluido = false;
+        $processos->save(); 
+        return redirect()->route('processosArquivados'); 
+}
+    public function excluirArquivado($id){
+        Processo::destroy($id);
+        return redirect()->route('processosArquivados');
+}
 
-    
 }

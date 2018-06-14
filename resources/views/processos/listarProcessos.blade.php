@@ -4,19 +4,22 @@
 <img id="fundo" src="../../imgs/fundoPrincipal.jpg"/>
     
     <div style="padding: 6%;">
-    <h1 style="text-align: center; font-size:20px;">Processos</h1>
+    <h1 style="text-align: center; font-size:20px;">Processos: Cliente fisico</h1>
 		<table class="table table-striped" style="background-color: white;">
   			<thead>
     				<tr>
-      					<th scope="col">Título</th>
-      					<th scope="col">Número</th>
-      					<th scope="col">Cliente</th>
-						<th scope="col">Advogado</th>
-						<th scope="col">Editar</th>
-						<th scope="col">Excluir</th>
+      				<th scope="col">Título</th>
+      				<th scope="col">Número</th>
+      				<th scope="col">Cliente</th>
+							<th scope="col">Advogado</th>
+							<th scope="col">Editar</th>
+							<th scope="col">Excluir</th>
+							<th scope="col">Arquivar</th>
+							<th scope="col">Imprimir</th>
     				</tr>
   			</thead>
   			<tbody>
+			
 				@foreach ($processos as $processo)
 					<tr>
 					<td>{{$processo->titulo}}</td>
@@ -31,7 +34,13 @@
 					data-testemunha2="{{$processo->testemunha2}}" data-testemunha3="{{$processo->testemunha3}}"
 					data-dataInicio="{{$processo->dataInicio}}">Editar</button></td>
 
-					<td><a type="button" class="btn btn-danger" href="{{ URL::route('excluirProcesso', ['id' => $processo->id])}}">X</a></td>
+					<td><a type="button" class="btn btn-danger" href="{{ URL::route('excluirProcesso', ['id' => $processo->id])}}"
+					style="border-radius: 6px !important; border-color: transparent;">X</a></td>
+
+					<td><a type="button" class="btn btn-success" href="{{ URL::route('arquivaProcesso', ['processo' => $processo])}}"
+					style="border-radius: 6px !important; border-color: transparent;">Arquivar</a></td>
+					
+					<td><a type="button" class="btn btn-success" href="#" style="border-radius: 6px !important; border-color: transparent;">Imprimir</a></td>
 					</tr>
 			    @endforeach
 				
@@ -49,11 +58,11 @@
 			  </button>
 			</div>
 			<div class="modal-body">
-        <form enctype="multipart/form-data" method="get" action="{{route('editarProcesso', ['processo' => $processo->id])}}">
+        <form  method="get" action="{{route('editarProcesso', ['processo' => $processo])}}">
 <div class="form-row">
                       <div class="col-md-2 mb-3">
                         <label>Título</label>
-                        <input type="text" id="id-titulo" class="form-control" name="titulo"placeholder="Digite o titulo">
+                        <input type="text" id="id-titulo" class="form-control" name="titulo" placeholder="Digite o titulo">
                     	</div>
 
                       <div class="col-md-2 mb-3">

@@ -22,6 +22,7 @@ Route::post("/", "TelaPrincipalMB@sair")->name('redireciona');
 //tela principal
 Route::group(['prefix' => 'login'], function() {
     Route::post("/principal", "TelaPrincipalMB@logar")->name('logar');
+    Route::get("/principal", "TelaPrincipalMB@principal")->name('home');
 });
 
 
@@ -32,16 +33,18 @@ Route::group(['prefix' => 'logado', 'middleware'=>['login']], function() {
     Route::get("/cadastrarClienteJuridico", "CadastrarClienteJuridicoMB@cadastrarClienteJ")->name('cadClienteJuridico');
     Route::post("/cadastro", "CadastrarClienteJuridicoMB@CadastroJ")->name('cad');    
     Route::get("/cadastrarUsuario", "CadastrarUsuariosMB@cadastrarUsuario")->name('cadUsuario');
-    //processo
+    //processos abertos
     Route::get("/cadastrarProcesso", "ProcessoMB@CadastrarProcesso")->name('cadProcesso');
     Route::post("/processoCadastrado", "ProcessoMB@cadastro")->name('processoCadastrado');
-    Route::get("/listarProcessos", "ProcessoMB@listarProcessos")->name('listaProcessos');
+    Route::get("/processos", "ProcessoMB@listarProcessos")->name('listaProcessos');
     
     Route::get("/editarProcessos/{id}", "ProcessoMB@editarProcesso")->name('editarProcesso');
+    Route::get("/arquivarProcessos/{id}", "ProcessoMB@arquivarProcesso")->name('arquivaProcesso');
     Route::get("/excluirProcesso/{id}", "ProcessoMB@excluir")->name('excluirProcesso');
-    // Route::post('/processoCadastrado', function () {
-    //     echo "meu caralho";
-    // })->name('processoCadastradoCaio');
+    //processos arquivados
+    Route::get("/processosArquivados", "ProcessoMB@listaProcessosArquivado")->name('processosArquivados');
+    Route::get("/reabrirProcessos/{id}", "ProcessoMB@reabrirProcesso")->name('reabrirProcesso');
+    Route::get("/excluirProcessoArquivado/{id}", "ProcessoMB@excluirArquivado")->name('excluirProcessoArquivado');
 });
 
 

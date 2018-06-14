@@ -30,4 +30,8 @@ class TelaPrincipalMB extends Controller
     public function home(){
         return redirect()->action('TelaPrincipalMB@logar');
     }
+
+    public function principal(){
+        return view ('pageMain');
+    }
 }

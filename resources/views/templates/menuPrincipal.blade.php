@@ -36,7 +36,7 @@
 		
 
 		<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark"style="position:fixed; width: 100%;">
-				<a class="navbar-brand" href="#">Home</a>
+				<a class="navbar-brand" href="{{URL::route('home')}}">Home</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
 				</button>
@@ -63,12 +63,10 @@
 						Processos
 					  </a>
 					  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="{{ URL::route('cadProcesso') }}">Cadastrar processo</a>
-						<a class="dropdown-item" href="#">Editar processo</a>
-						<a class="dropdown-item" href="{{ URL::route('listaProcessos') }}">Listar processos</a>
-						<a class="dropdown-item" href="#">Arquivar processo</a>
+						<a class="dropdown-item" href="{{ URL::route('cadProcesso') }}">Cadastrar processo cliente fisico</a>
+						<a class="dropdown-item" href="{{ URL::route('listaProcessos') }}">Listar processos cliente fisico</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Excluir processo</a>
+						<a class="dropdown-item" href="{{ URL::route('processosArquivados') }}">Listar processos arquivados cliente fisico</a>
 					  </div>
 					</li>
 
