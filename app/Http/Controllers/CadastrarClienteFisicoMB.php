@@ -34,8 +34,10 @@ class CadastrarClienteFisicoMB extends Controller
         $clienteF->dataNascimento = $request->dataNascimento;
         $clienteF->rg = $request->rg;
         $clienteF->estadoCivil = $request->estadoCivil;
-        $clienteF->conjugue = $request->conjugue;
-        $clienteF->certidao_casamento = $request->certidaoCasamento;
+        if(!is_null($clienteF->conjugue)){
+            $clienteF->conjugue = $request->conjugue;
+            $clienteF->certidao_casamento = $request->certidaoCasamento;
+        }
         $clienteF->uf = $request->uf;
         $clienteF->ufCtps = $request->ufCtps;
         $clienteF->save();   

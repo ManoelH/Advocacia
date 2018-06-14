@@ -28,8 +28,8 @@ class ClienteFisico extends Migration
             $table->string('numero');
             $table->date('dataNascimento');
             $table->string('rg');
-            $table->string('estadocivil');
-            $table->string('conjugue');                        
+            $table->string('estadocivil')->default(' ');
+            $table->string('conjugue')->default(' ');                        
             $table->string('certidao_casamento');
             $table->string('uf');
             $table->string('ufCtps');

@@ -21,27 +21,27 @@
 	 										<div class="col-md-2 mb-3">
 													<label>Área de atuação</label>
 													<div class="form-group">
-														<select name="areaAtuacao" class="custom-select" name="areaAtuacao" style="align: bottom;"  >
+														<select name="areaAtuacao" class="custom-select" name="areaAtuacao" style="align: bottom;">
 															<option value=""></option>
-															<option value="1">Administração</option>
-															<option value="2">Agrícola</option>
-															<option value="3">Atacadista</option>
-															<option value="4">Comércio de roupas</option>
-															<option value="5">Comércio de sapatos</option>
-															<option value="6">Comécio peças auto.</option>
-															<option value="7">Contabilidade</option>
-															<option value="8">Educação</option>
-															<option value="9">Educação superior</option>
-															<option value="10">Engenharia civil</option>
-															<option value="11">E-commerceMG</option>
-															<option value="12">Farmacêutico</option>
-															<option value="13">Industrial</option>
-															<option value="14">Móveis e eletro</option>
-															<option value="15">Perfumaria</option>
-															<option value="16">Serviços alimenticios</option>
-															<option value="17">Serviços gerais</option>
-															<option value="18">Transporte público</option>
-															<option value="19">Varejo</option>
+															<option value="Administração">Administração</option>
+															<option value="Agrícola">Agrícola</option>
+															<option value="Atacadista">Atacadista</option>
+															<option value="Comércio de roupas">Comércio de roupas</option>
+															<option value="Comércio de sapatos">Comércio de sapatos</option>
+															<option value="Comécio peças auto.">Comécio peças auto.</option>
+															<option value="Contabilidade">Contabilidade</option>
+															<option value="Educação">Educação</option>
+															<option value="Educação superior">Educação superior</option>
+															<option value="Engenharia civil">Engenharia civil</option>
+															<option value="E-commerceMG">E-commerceMG</option>
+															<option value="Farmacêutico">Farmacêutico</option>
+															<option value="Industrial">Industrial</option>
+															<option value="Móveis e eletro">Móveis e eletro</option>
+															<option value="Perfumaria">Perfumaria</option>
+															<option value="Serviços alimenticios">Serviços alimenticios</option>
+															<option value="Serviços gerais">Serviços gerais</option>
+															<option value="Transporte público">Transporte público</option>
+															<option value="Varejo">Varejo</option>
 														</select>
 													</div>
 													</div>

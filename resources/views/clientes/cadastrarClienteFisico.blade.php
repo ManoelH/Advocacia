@@ -96,9 +96,9 @@
 													<div class="form-group">
 														<select class="custom-select" name="estadoCivil"  >
 															<option value=""></option>
-															<option value="1">Solteiro</option>
-															<option value="2">Casado</option>
-															<option value="3">Divorciado</option>
+															<option value="Solteiro">Solteiro</option>
+															<option value="Casado">Casado</option>
+															<option value="Divorciado">Divorciado</option>
 														</select>
 													</div>
 													</div>
@@ -122,33 +122,33 @@
 													<div class="form-group">
 														<select name="uf" class="custom-select" style="align: bottom;"  >
 															<option value=""></option>
-															<option value="1">AC</option>
-															<option value="2">AL</option>
-															<option value="3">AP</option>
-															<option value="4">AM</option>
-															<option value="5">BA</option>
-															<option value="6">CE</option>
-															<option value="7">DF</option>
-															<option value="8">ES</option>
-															<option value="9">GO</option>
-															<option value="10">MA</option>
-															<option value="11">MG</option>
-															<option value="12">MS</option>
-															<option value="13">MT</option>
-															<option value="14">PA</option>
-															<option value="15">PB</option>
-															<option value="16">PE</option>
-															<option value="17">PI</option>
-															<option value="18">PR</option>
-															<option value="19">RJ</option>
-															<option value="20">RN</option>
-															<option value="21">RO</option>
-															<option value="22">RR</option>
-															<option value="23">RS</option>
-															<option value="24">SC</option>
-															<option value="25">SE</option>
-															<option value="26">SP</option>
-															<option value="27">TO</option>
+															<option value="AC">AC</option>
+															<option value="AL">AL</option>
+															<option value="AP">AP</option>
+															<option value="AM">AM</option>
+															<option value="BA">BA</option>
+															<option value="CE">CE</option>
+															<option value="DF">DF</option>
+															<option value="ES">ES</option>
+															<option value="GO">GO</option>
+															<option value="MA">MA</option>
+															<option value="MG">MG</option>
+															<option value="MS">MS</option>
+															<option value="MT">MT</option>
+															<option value="PA">PA</option>
+															<option value="PB">PB</option>
+															<option value="PE">PE</option>
+															<option value="PI">PI</option>
+															<option value="PR">PR</option>
+															<option value="RJ">RJ</option>
+															<option value="RN">RN</option>
+															<option value="RO">RO</option>
+															<option value="RR">RR</option>
+															<option value="RS">RS</option>
+															<option value="SC">SC</option>
+															<option value="SE">SE</option>
+															<option value="SP">SP</option>
+															<option value="TO">TO</option>
 														</select>
 													</div>
 													</div>
@@ -157,34 +157,34 @@
 													<label>UF da CTPS</label>
 													<div class="form-group">
 														<select name="ufCtps" class="custom-select"  >
-															<option value=""></option>
-															<option value="1">AC</option>
-															<option value="2">AL</option>
-															<option value="3">AP</option>
-															<option value="4">AM</option>
-															<option value="5">BA</option>
-															<option value="6">CE</option>
-															<option value="7">DF</option>
-															<option value="8">ES</option>
-															<option value="9">GO</option>
-															<option value="10">MA</option>
-															<option value="11">MG</option>
-															<option value="12">MS</option>
-															<option value="13">MT</option>
-															<option value="14">PA</option>
-															<option value="15">PB</option>
-															<option value="16">PE</option>
-															<option value="17">PI</option>
-															<option value="18">PR</option>
-															<option value="19">RJ</option>
-															<option value="20">RN</option>
-															<option value="21">RO</option>
-															<option value="22">RR</option>
-															<option value="23">RS</option>
-															<option value="24">SC</option>
-															<option value="25">SE</option>
-															<option value="26">SP</option>
-															<option value="27">TO</option>
+														<option value=""></option>
+															<option value="AC">AC</option>
+															<option value="AL">AL</option>
+															<option value="AP">AP</option>
+															<option value="AM">AM</option>
+															<option value="BA">BA</option>
+															<option value="CE">CE</option>
+															<option value="DF">DF</option>
+															<option value="ES">ES</option>
+															<option value="GO">GO</option>
+															<option value="MA">MA</option>
+															<option value="MG">MG</option>
+															<option value="MS">MS</option>
+															<option value="MT">MT</option>
+															<option value="PA">PA</option>
+															<option value="PB">PB</option>
+															<option value="PE">PE</option>
+															<option value="PI">PI</option>
+															<option value="PR">PR</option>
+															<option value="RJ">RJ</option>
+															<option value="RN">RN</option>
+															<option value="RO">RO</option>
+															<option value="RR">RR</option>
+															<option value="RS">RS</option>
+															<option value="SC">SC</option>
+															<option value="SE">SE</option>
+															<option value="SP">SP</option>
+															<option value="TO">TO</option>
 														</select>
 													</div>
 													</div>
