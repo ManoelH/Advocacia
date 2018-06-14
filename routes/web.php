@@ -31,8 +31,10 @@ Route::group(['prefix' => 'login'], function() {
 Route::group(['prefix' => 'logado', 'middleware'=>['login']], function() {
     Route::get("/cadastrarClienteFisico", "CadastrarClienteFisicoMB@cadastrarClienteF")->name('cadClienteFisico');
     Route::get("/cadastrarClienteJuridico", "CadastrarClienteJuridicoMB@cadastrarClienteJ")->name('cadClienteJuridico');
-    Route::post("/cadastro", "CadastrarClienteJuridicoMB@CadastroJ")->name('cad');    
+    Route::post("/cadastroJ", "CadastrarClienteJuridicoMB@CadastroJ")->name('cad');
+    Route::post("/cadastroF", "CadastrarClienteFisicoMB@cadastro")->name('cadFisico');    
     Route::get("/cadastrarUsuario", "CadastrarUsuariosMB@cadastrarUsuario")->name('cadUsuario');
+
     //processos abertos
     Route::get("/cadastrarProcesso", "ProcessoMB@CadastrarProcesso")->name('cadProcesso');
     Route::post("/processoCadastrado", "ProcessoMB@cadastro")->name('processoCadastrado');

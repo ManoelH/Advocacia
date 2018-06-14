@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class TabelaClientesf extends Migration
+class ClienteFisico extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class TabelaClientesf extends Migration
      */
     public function up()
     {
-        Schema::create('clientes_fisicos', function (Blueprint $table) {
+        Schema::create('clientesfisicos', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('nome');
@@ -26,9 +26,9 @@ class TabelaClientesf extends Migration
             $table->string('cidade');
             $table->string('rua');
             $table->string('numero');
-            $table->string('dataNascimento');
+            $table->date('dataNascimento');
             $table->string('rg');
-            $table->string('estado_civil');
+            $table->string('estadocivil');
             $table->string('conjugue');                        
             $table->string('certidao_casamento');
             $table->string('uf');
@@ -43,6 +43,6 @@ class TabelaClientesf extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('clientes_fisicos');
+        Schema::dropIfExists('clientesfisicos');
     }
 }

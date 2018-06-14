@@ -7,7 +7,8 @@
 
 						<div style="padding: 3%;">
 						<h1 style="text-align: center; margin-top: 2%;">Cadastrar cliente fisico</h1><br/><br/><br/>
-              <form class="needs-validation" novalidate>
+              <form class="needs-validation" enctype="multipart/form-data" method="post" action="{{route('cadFisico')}}" novalidate>
+								{{csrf_field()}}
                     <div class="form-row">
                       <div class="col-md-2 mb-3">
                         <label>Cliente</label>
@@ -39,7 +40,7 @@
 
 													<div class="col-md-2 mb-3">
                         <label for="validation-PISPASEP">PIS/PASEP</label>
-                          <input type="text" name="pisPasep" class="form-control" id="validation-PISPASEP" placeholder="digite o PIS/PASEP" aria-describedby="inputGroupPrepend"  >
+                          <input type="text" name="pispasep" class="form-control" id="validation-PISPASEP" placeholder="digite o PIS/PASEP" aria-describedby="inputGroupPrepend"  >
                           <div class="invalid-feedback">
                             Por favor digite o PIS/PASEP
                           </div>
@@ -78,11 +79,8 @@
 												</div>
 
 													<div class="col-md-3 mb-3">
-														<label for="validation-dt-nascimento">Data de nascimento</label>
-														<input type="text" name="dataNascimento" class="form-control" id="validation-dt-nascimento" placeholder="Digite a data de nascimento"  >
-														<div class="invalid-feedback">
-															Por favor digite a data de nascimento
-														</div>
+														<label>Data de nascimento</label>
+														<input type="date" name="dataNascimento" class="form-control"  aria-describedby="inputGroupPrepend">
 													</div>
 
 													<div class="col-md-3 mb-3">
@@ -113,7 +111,7 @@
 
 											<div class="col-md-3 mb-3">
 														<label>Certidão de casamento</label>
-														<input type="text" name="certidaoNascimento" class="form-control" id="validation-casamento" placeholder="Digite a certidão de casamento"  >
+														<input type="text" name="certidaoCasamento" class="form-control" id="validation-casamento" placeholder="Digite a certidão de casamento"  >
 														<div class="invalid-feedback">
 															Por favor digite a certidão de casamento
 														</div>
@@ -196,7 +194,7 @@
 													<img src="../../../imgs/uploads/cliente fisico.jpg" alt="titulo" class="img-thumbnail" style="width:200px; height:150px;">
 													</div>															
 
-											    	<input type="file" class="form-control-file" id="exampleFormControlFile1" style="width: 350px;">
+											    	<input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1" style="width: 350px;">
 
 
 

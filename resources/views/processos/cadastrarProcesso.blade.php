@@ -137,7 +137,7 @@
 													</div>
 											<div class="col-md-1,5 mb-3">
                         <label >Data de inicio do processo</label>
-                          <input type="date" name="dataInicio" class="form-control"  aria-describedby="inputGroupPrepend" placeholder="Digite a data" >		
+                          <input type="date" name="dataInicio" class="form-control"  aria-describedby="inputGroupPrepend">		
                       </div>
 										
                       

@@ -48,33 +48,33 @@
 
 											<div class="col-md-2 mb-3">
                         <label>Telefone</label>
-                        <input type="text" name="telefone" class="form-control" name="telefone" placeholder="Digite o telefone"  >
+                        <input type="text" class="form-control" name="telefone" placeholder="Digite o telefone"  >
                       </div>
 
 											<div class="col-md-2 mb-3">
                         <label>CNPJ</label>
-                          <input type="text" name="cnpj" class="form-control" name="cnpj"  placeholder="digite o CNPJ" aria-describedby="inputGroupPrepend">
+                          <input type="text" class="form-control" name="cnpj"  placeholder="digite o CNPJ" aria-describedby="inputGroupPrepend">
 												</div>
 												
 												<div class="col-md-2 mb-3">
 													<label>Razão social</label>
-														<input type="text" name="razaoSocial" class="form-control" name="razaoSocial" id="validation-razao" aria-describedby="inputGroupPrepend">
+														<input type="text" class="form-control" name="razaoSocial" id="validation-razao" aria-describedby="inputGroupPrepend">
 													</div>
 
 													<div class="col-md-2 mb-3">
 														<label>Cidade</label>
-														<input type="text" name="cidade" class="form-control" name="cidade" placeholder="Digite a cidade"  >
+														<input type="text" class="form-control" name="cidade" placeholder="Digite a cidade"  >
 													</div>
 
 	                    <div class="col-md-2 mb-3">
                         <label>Rua</label>
-                        <input type="text" name="rua" class="form-control" name="rua" placeholder="Digite a rua"  >
+                        <input type="text" class="form-control" name="rua" placeholder="Digite a rua"  >
                         
                       </div>
 
 											<div class="col-md-1,5 mb-3">
                         <label>Nº</label>
-                          <input type="text" name="numero" class="form-control" name="n" aria-describedby="inputGroupPrepend" placeholder="Digite a número"  >
+                          <input type="text" class="form-control" name="n" aria-describedby="inputGroupPrepend" placeholder="Digite a número"  >
 												</div>
 
 													<div class="col-md-2 mb-3">
