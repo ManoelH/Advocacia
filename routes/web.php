@@ -17,10 +17,10 @@
 
 //tela inicial
 Route::get("/", "TelaInicialMB@telaInicial")->name('telaInicial');
-Route::post("/", "TelaPrincipalMB@sair")->name('redireciona');
+Route::post("/", "TelaPrincipalMB@sair")->name('sair');
 
 //tela principal
-Route::group(['prefix' => 'login'], function() {
+Route::group(['prefix' => 'login', 'middleware'=>['login']], function() {
     Route::post("/principal", "TelaPrincipalMB@logar")->name('logar');
     Route::get("/principal", "TelaPrincipalMB@principal")->name('home');
 });

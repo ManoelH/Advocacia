@@ -109,7 +109,7 @@
 					  </div>
 					</li>
 				  </ul>
-				  <form action="{{route('redireciona')}}" method="post" class="form-inline my-2 my-lg-0">
+				  <form action="{{route('sair')}}" method="post" class="form-inline my-2 my-lg-0">
 							{{csrf_field()}}
 					<button class="btn btn-dark" type="submit">Sair</button>
 				  </form>

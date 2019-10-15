@@ -19,7 +19,6 @@ class TelaPrincipalMB extends Controller
         }
         else
             return redirect()->back()->with('Erro', 'Usuário ou senha incorretos');
-            
     }
 
     public function sair(Request $request){

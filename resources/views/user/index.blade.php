@@ -6,25 +6,14 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	 <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
 
-	 <style>
-	 img{
-		 position: fixed;
-		 height: 100%;
-		 width: 100%;
-		 z-index: -999;  
-	 };
-
-
-	 
-	 </style>
 	<title>Tela de login</title>
 </head>
-<body>
-	<title>MH Advocacia - Home</title>
-	<div>
-		<img src="../../../imgs/fundo.jpg"/>
-		<p style=" font-size: 70px; color: white; font-family: 'Gugi', cursive; text-align:center;">MH Advocacia</p></br></br></br></br> 
-	 	
+<body>	
+
+	<div> 
+		
+		<p style=" font-size: 70px; color: black; text-align:center;">MH Advocacia</p>
+		<img src="../../../imgs/balanca.jpg" style="width:7%; height: 7%; margin-left: 45%;"/>
 		@if(session('Erro'))
 			<!-- LOGIN ou SENHA INCORRETA -->
 				<div class="alert alert-danger">

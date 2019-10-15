@@ -15,9 +15,10 @@ class LoginMiddleware
      */
     public function handle($request, Closure $next)
     {   
-        if(!session('usuario'))
-            return redirect()->route('telaInicial');
-        
+        if($request->route()->getName()!='logar'){
+            if(!session('usuario'))
+                return redirect()->route('telaInicial');
+    }
         return $next($request);
     }
 }
