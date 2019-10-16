@@ -7,13 +7,14 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
+use App\models\Usuario;
 
 class TelaPrincipalMB extends Controller
 {
     //
     public function logar(Request $request){
-
-        if($request->Usuario =='Manoel' && $request->Senha == '1234'){
+        $usuario = Usuario::where('nome', $request->Usuario)->where('senha', $request->Senha)->first();
+        if($usuario!=null){
             session(['usuario'=>'Manoel']);
             return view ('pageMain');
         }

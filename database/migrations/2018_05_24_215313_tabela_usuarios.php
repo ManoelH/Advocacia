@@ -16,7 +16,7 @@ class TabelaUsuarios extends Migration
         Schema::create('usuarios', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
-            $table->boolean('tipo');
+            $table->integer('tipo');
             $table->string('senha');
             $table->timestamps();
         });

@@ -4,24 +4,26 @@
 				<img id="fundo" src="../../../imgs/fundoPrincipal.jpg"/>
         <div style="padding: 3%;">
 				<h1 style="text-align: center; margin-top: 2%;">Cadastrar usuário</h1><br/><br/><br/>
-				<form class="needs-validation" novalidate>
+        <form class="needs-validation" enctype="multipart/form-data" method="POST" 
+        action="{{route('cadastrarUsuario')}}" novalidate>
+            {{csrf_field()}}
                     <div class="form-row" style="position: absolute !important; right: 45% !important;">
                       <div>
                         <label for="validation-usuario">Usuário</label>
-                        <input type="text" class="form-control" id="validation-usuario" placeholder="Digite o usuário" required>
+                        <input type="text" name="usuario"class="form-control" id="validation-usuario" placeholder="Digite o usuário" required>
                         <div class="invalid-feedback">
                           Por favor digite o usuário
                         </div>
 
 												<label for="validation-senha">Senha</label>
-                        <input type="password" class="form-control" id="validation-senha" placeholder="Digite a senha" required>
+                        <input type="password" name="senha" class="form-control" id="validation-senha" placeholder="Digite a senha" required>
                         <div class="invalid-feedback">
 												Por favor digite a senha
                         </div>
 
 												<label>Tipo de usuário</label>
 													<div class="form-group">
-														<select class="custom-select" required>
+														<select name="tipoUsuario" class="custom-select" required>
 															<option value=""></option>
 															<option value="1">Advogado</option>
 															<option value="2">Usuário comum</option>

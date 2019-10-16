@@ -101,7 +101,7 @@
 						Usuários
 					  </a>
 					  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="{{ URL::route('cadUsuario') }}">Cadastrar usuário</a>
+						<a class="dropdown-item" href="{{ URL::route('telaCadastroUsuario') }}">Cadastrar usuário</a>
 						<a class="dropdown-item" href="#">Editar usuário</a>
 						<a class="dropdown-item" href="#">Listar usuários</a>
 						<div class="dropdown-divider"></div>
