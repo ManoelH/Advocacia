@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\models\Usuario;
 
-class CadastrarUsuariosMB extends Controller
+class UsuariosMB extends Controller
 {
     public function abrirTelaCadastrarUsuario(){
         return view('user.cadastrarUsuarios'); 

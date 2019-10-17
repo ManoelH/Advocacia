@@ -48,8 +48,8 @@
 						Clientes
 					  </a>
 					  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="{{ URL::route('cadClienteFisico') }}">Cadastrar cliente fisico</a>
-						<a class="dropdown-item" href="{{ URL::route('cadClienteJuridico') }}">Cadastrar cliente juridico</a>
+						<a class="dropdown-item" href="{{ URL::route('telaCadastroClienteFisico') }}">Cadastrar cliente fisico</a>
+						<a class="dropdown-item" href="{{ URL::route('telaCadastroClienteJuridico') }}">Cadastrar cliente juridico</a>
 						<a class="dropdown-item" href="#">Editar cliente</a>
 						<a class="dropdown-item" href="#">Listar clientes</a>
 						<div class="dropdown-divider"></div>

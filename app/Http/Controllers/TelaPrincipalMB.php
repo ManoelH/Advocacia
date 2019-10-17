@@ -15,7 +15,7 @@ class TelaPrincipalMB extends Controller
     public function logar(Request $request){
         $usuario = Usuario::where('nome', $request->Usuario)->where('senha', $request->Senha)->first();
         if($usuario!=null){
-            session(['usuario'=>'Manoel']);
+            session(['usuario'=> $usuario]);
             return view ('pageMain');
         }
         else

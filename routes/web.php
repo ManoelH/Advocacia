@@ -29,12 +29,12 @@ Route::group(['prefix' => 'login', 'middleware'=>['login']], function() {
 
     //rotas logado
 Route::group(['prefix' => 'logado', 'middleware'=>['login']], function() {
-    Route::get("/cadastrarClienteFisico", "CadastrarClienteFisicoMB@cadastrarClienteF")->name('cadClienteFisico');
-    Route::get("/cadastrarClienteJuridico", "CadastrarClienteJuridicoMB@cadastrarClienteJ")->name('cadClienteJuridico');
-    Route::post("/cadastroJ", "CadastrarClienteJuridicoMB@CadastroJ")->name('cad');
-    Route::post("/cadastroF", "CadastrarClienteFisicoMB@cadastro")->name('cadFisico');    
-    Route::get("/cadastrarUsuario", "CadastrarUsuariosMB@abrirTelaCadastrarUsuario")->name('telaCadastroUsuario');
-    Route::post("/cadastrarUsuario", "CadastrarUsuariosMB@cadastrarUsuario")->name('cadastrarUsuario');
+    Route::get("/cadastrarClienteFisico", "ClienteFisicoMB@abrirTelaCadastroClienteFisico")->name('telaCadastroClienteFisico');
+    Route::get("/cadastrarClienteJuridico", "ClienteJuridicoMB@abrirTelaCadastroCadastrarClienteJuridico")->name('telaCadastroClienteJuridico');
+    Route::post("/cadastroClienteJuridico", "ClienteJuridicoMB@cadastrarClienteJuridico")->name('cadastroClienteJuridico');
+    Route::post("/cadastroClienteFisico", "ClienteFisicoMB@cadastrarClienteFisico")->name('cadastroClienteFisico');    
+    Route::get("/cadastrarUsuario", "UsuariosMB@abrirTelaCadastrarUsuario")->name('telaCadastroUsuario');
+    Route::post("/cadastrarUsuario", "UsuariosMB@cadastrarUsuario")->name('cadastrarUsuario');
 
     //processos abertos
     Route::get("/cadastrarProcesso", "ProcessoMB@CadastrarProcesso")->name('cadProcesso');

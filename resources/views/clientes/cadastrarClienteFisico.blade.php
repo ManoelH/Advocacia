@@ -7,7 +7,7 @@
 
 						<div style="padding: 3%;">
 						<h1 style="text-align: center; margin-top: 2%;">Cadastrar cliente fisico</h1><br/><br/><br/>
-              <form class="needs-validation" enctype="multipart/form-data" method="post" action="{{route('cadFisico')}}" novalidate>
+              <form class="needs-validation" enctype="multipart/form-data" method="post" action="{{route('cadastroClienteFisico')}}" novalidate>
 								{{csrf_field()}}
                     <div class="form-row">
                       <div class="col-md-2 mb-3">
